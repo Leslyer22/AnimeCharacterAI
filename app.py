@@ -1,6 +1,8 @@
+
 import streamlit as st
 import google.generativeai as genai
 import os
+from google.api_core.exceptions import GoogleAPICallError, DeadlineExceeded
 
 # Configurar la API de Gemini
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
@@ -42,11 +44,21 @@ if st.button("Generar descripción"):
             f"de {edad} años. Este personaje tiene una personalidad {personalidad} y cumple el rol de {rol}. "
             f"Incluye aspectos físicos, estilo, motivaciones, historia personal y relaciones con otros personajes."
         )
-        model = genai.GenerativeModel('gemini-pro')
-        response = model.generate_content(prompt)
-        
-        # Mostrar la descripción generada
-        st.subheader("Descripción generada:")
-        st.write(response.text)
+
+        try:
+            model = genai.GenerativeModel('gemini-pro')
+            response = model.generate_content(prompt)
+            
+            # Mostrar la descripción generada
+            st.subheader("Descripción generada:")
+            st.write(response.text)
+
+        except DeadlineExceeded:
+            st.error("La solicitud a la IA tardó demasiado y fue cancelada. Intenta nuevamente en unos segundos.")
+        except GoogleAPICallError as e:
+            st.error(f"Ocurrió un error al comunicarse con la API de Google: {e}")
+        except Exception as e:
+            st.error(f"Algo salió mal: {e}")
     else:
         st.warning("Por favor, completa todos los campos antes de generar la descripción.")
+
