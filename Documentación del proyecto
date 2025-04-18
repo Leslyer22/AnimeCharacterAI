@@ -1,0 +1,62 @@
+#PORTADA
+
+Título del proyecto:
+AnimeCharacterAI
+
+Nombre del estudiante:
+Leslyer Santos de Araújo
+
+Comisión:
+71380
+
+Curso:
+Inteligencia Artificial: Prompt Engineering para programadores - Carreras Intensivas
+
+ #INTRODUCCIÓN
+La inteligencia artificial (IA) ha revolucionado la forma en que creamos contenido,
+desde textos hasta imágenes.
+Este proyecto se enfoca en utilizar la IA generativa para apoyar a creadores de contenido, guionistas y aficionados
+al anime que deseen diseñar personajes originales sin necesidad de conocimientos técnicos avanzados.
+La herramienta desarrollada permite generar descripciones detalladas y creativas de personajes de anime a partir de simples parámetros proporcionados por el usuario.
+
+#PROBLEMÁTICA
+
+Crear personajes originales para una historia de anime puede ser un desafío creativo considerable, 
+especialmente para quienes no tienen experiencia en desarrollo de personajes. no saben por dónde empezar pero tienen una idea inicial y con los campos agregados la IA va a ayudar
+a crear una descripción más detallada.
+Esto puede limitar la capacidad de muchos aficionados, estudiantes o creadores independientes para materializar sus ideas de forma clara y coherente.
+Existe una necesidad de herramientas accesibles que apoyen el proceso de creación narrativa.
+Propuesta de Aplicación Web con IA
+Nombre de la App:
+Generador de Personajes de Anime con IA
+
+Función principal:
+Generar descripciones detalladas de personajes de anime basadas en parámetros personalizados.
+
+Tarea específica:
+Transformar los campos introducidos por el usuario (nombre, edad, personalidad y rol) en un texto descriptivo generado automáticamente por un modelo de lenguaje.
+
+Integración con IA:
+La aplicación utiliza la API de Gemini (Google Generative AI) para procesar el prompt personalizado y generar una descripción detallada y coherente en lenguaje natural.
+
+Importancia:
+Permite a los usuarios enfocarse en la creatividad sin preocuparse por la redacción o estructura del personaje. Además, democratiza el acceso a herramientas de IA sin necesidad de saber programar ni instalar software.
+
+ #PROMPT INICIAL
+
+ Crea una descripción detallada y original para un personaje de anime llamado [nombre], 
+de [edad] años. Este personaje tiene una personalidad [personalidad] y cumple el rol de [rol]. 
+Incluye aspectos físicos, estilo, motivaciones, historia personal y relaciones con otros personajes.
+
+#SOLUCION DE LA PROPUESTA
+
+La solución propuesta es una aplicación web que integra inteligencia artificial para asistir en la creación de personajes de anime.
+A partir de datos simples como el nombre, edad, personalidad y rol del personaje, la IA genera una descripción detallada
+que incluye aspectos físicos, estilo, motivaciones, historia personal y relaciones. Esta herramienta tiene el potencial de estimular la creatividad,
+acelerar el proceso creativo y servir como inspiración para escritores, mangakas, gamers o guionistas.
+
+#CONCLUSIONES
+
+El proyecto cumplió su objetivo de integrar inteligencia artificial en una aplicación web accesible, funcional y útil para la creación de personajes de anime.
+Gracias a la simplicidad de Streamlit y el poder del modelo Gemini, se logró una solución efectiva y creativa. 
+Esta propuesta demuestra el potencial de la IA como herramienta de apoyo para actividades artísticas y creativas. 
